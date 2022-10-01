@@ -5,7 +5,7 @@ const Data = {
       Id: 101,
       category: 'MERN Stack develpoer',
       salary: 20000,
-      image:'/images/p1.image',
+      image:'/images/image1.jpg',
       Experience:2
     },
     {
@@ -13,7 +13,7 @@ const Data = {
       Id: 102,
       category: 'Salesforce develpoer',
       salary: 35000,
-      image:'/images/p2.image',
+      image:'/images/image1.jpg',
       Experience:3
     },
     {
@@ -21,7 +21,7 @@ const Data = {
         Id: 103,
         category: 'Full Stack develpoer',
         salary: 20000,
-        image:'/images/p3.image',
+        image:'/images/image1.jpg',
         Experience:4
       },
   ],
