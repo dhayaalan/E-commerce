@@ -28,7 +28,7 @@ function Login() {
           <button class='btn mt-3'>Login</button>
         </form>
         <div class='text-center fs-6'>
-          <a href='Login'>Forget password?</a> or <a href='Sign-up'>Sign up</a>
+          <a href='Login'>Forget password?</a> or <a href='Signup'>Sign up</a>
         </div>
       </div>
     </div>

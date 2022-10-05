@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import { Route, Router } from 'react-router-dom';
 // import Login from './Login';
+import '../css/Navigation.css'
 
 function Navigation() {
   return (
@@ -14,15 +15,16 @@ function Navigation() {
           <Link className='nav-link' to="/home">
             Home
           </Link>
+          <Link className='nav-link' id='' href='/Contact'>
+            Category
+          </Link>
           <Link className='nav-link' to='/login'>
             Login
           </Link>
           <Link className='nav-link' to='/Signup'>
             Signup
           </Link>
-          <Link className='nav-link' href='/Contact'>
-            Contact
-          </Link>
+         
         </div>
       </header>
     </div>

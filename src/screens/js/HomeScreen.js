@@ -1,6 +1,7 @@
 import React from 'react';
 import Data from '../../data';
 import '../css/HomeScreen.css';
+import Navigation from './Navigation';
 
 // Horizontal List
 // function HorizontalList(props) {
@@ -22,8 +23,8 @@ function HorizontalList1(props) {
     <div className='row'>
       {props.items.map((employee) => (
         <div className='col-6 col-sm-2' key={employee.Id}>
-          <img src={employee.image} alt={employee.category} width="100%" />
-          {<p>{employee.name}</p>}
+          <img src={employee.image} alt={employee.category} width='100%' />
+          {/* {<p>{employee.name}</p>} */}
         </div>
       ))}
     </div>
@@ -33,9 +34,11 @@ function HorizontalList1(props) {
 function HomeScreen() {
   return (
     <div className='Home'>
+      <Navigation />
       <div>
         <h6>Laptop</h6>
       </div>
+
       <HorizontalList1 className='list' items={Data.employees} />
       <div>
         <h6>Mobiles</h6>
