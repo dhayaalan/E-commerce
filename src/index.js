@@ -1,22 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './index.css';
-import App from './App';
-import Login from './screens/js/Login';
-import Signup from './screens/js/Signup';
-import HomeScreen from './screens/js/HomeScreen';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./index.css";
+import "./App.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import HomeView from "./pages/HomeView";
+import ProductsByCategoryView from "./pages/ProductsByCategoryView";
+import ProductView from "./pages/ProductView";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/home' element={<HomeScreen />} />
-        <Route path='login' element={<Login/>}/>
-        <Route path='/Signup' element={<Signup/>}/>
-
+        <Route path="/" element={<HomeView />} />
+        <Route path="/products/:productId" element={<ProductView />} />
+        <Route path="/categories/:categoryId" element={<ProductsByCategoryView />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

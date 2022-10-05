@@ -1,9 +1,10 @@
 import React from 'react';
-import '../css/Sign.css';
+import NavigationHeader from "./shared/NavigationHeader";
 
 function Signup() {
   return (
     <div>
+      <NavigationHeader />
       <form>
         <div class='wrapper'>
           <div className='login'>Signup</div>

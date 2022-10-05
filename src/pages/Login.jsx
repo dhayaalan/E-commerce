@@ -1,9 +1,10 @@
 import React from 'react';
-import '../css/Login.css';
+import NavigationHeader from "./shared/NavigationHeader";
 
 function Login() {
   return (
     <div className='bg'>
+      <NavigationHeader />
       <div class='wrapper'>
         <div className='login'>Login Page</div>
         <form class='p-3 mt-3'>
